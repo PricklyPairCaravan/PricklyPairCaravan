@@ -15,6 +15,32 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel="manifest" href="/site.webmanifest">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		.collapsible {
+		background-color: #777;
+		color: white;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 15px;
+		}
+
+		.active, .collapsible:hover {
+		background-color: #555;
+		}
+
+		.content {
+		padding: 0 18px;
+		display: none;
+		overflow: hidden;
+		background-color: #f1f1f1;
+		}
+		</style>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -74,9 +100,13 @@
 								<li> Sushi Go! Travel version</li>
 								<img src="images/sushi.png" alt="" width ="250" height="250"/>
 								<p>A card drafting game where you pick the best sushi combos!</p>
+								<button type="button" class="collapsible">How to play Sushi Go!</button>
+								<div class="content">
 									<iframe width="400" height="315"
 									src="https://www.youtube.com/embed/uSN0NoaeNbk" referrerpolicy="no-referrer-when-downgrade"></iframe>>
 									</iframe>
+								  </div>
+
 							</ul>
 
 							<h3><b>$4</b></h3>
