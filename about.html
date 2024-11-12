@@ -65,27 +65,48 @@ https://templatemo.com/tm-539-simple-house
 					<!-- FAQ -->
 					<div class="col-12 tm-faq">
 						<h2 class="text-center tm-section-title">FAQs</h2>
-						<p class="text-center">This section comes with Accordion tabs for different questions and answers about Simple House HTML CSS template. Thank you. #666</p>
+						<p class="text-center">Everything you need to know about me!</p>
 						<div class="tm-accordion">
-							<button class="accordion">1. Fusce eu lorem et dui #09C maximus varius?</button>
+							<button class="accordion">Are the game nights really free?</button>
 							<div class="panel">
-							  <p>#666 Duis blandit purus vel nenenatis rutrum. Pellentesque pellentesque tindicunt lorem, ac egestas massa sollicitudin vel. Nam scelerisque vulputate quam mollis pretium. Morbi condimentum volutpat.</p>
+							  <p>Yes! There is no cost to enter but any purchase you make at  Quarter Celtic is greatly appreciated! They have helped me so much to make this a reality so even a single beer purchase is a great way to support these nights. And no worries at all if you spill a drink or get food on a game. That's the cost of doing business babeyyy there is no charge for damaging a game.</p>
 							</div>
 							
-							<button class="accordion">2. Vestibulum #999 ante ipsum primis in faucibus orci?</button>
+							<button class="accordion">Why do you sell for $15 or less?</button>
 							<div class="panel">
-							  <p>Mauris euismod odio at commodo rhoncus. Maecenas nec interdum purus, sed auctor est. Sed eleifend urna nec diam consectetur, a aliquet turpis facilisis. Integer est sapien, sagittis vel massa vel, interdum euismod erat. Aenean sollicitudin nisi neque, efficitur posuere urna rutrum porta.</p>
+							  <p>Primarily because I can't afford to stock the newer and/or pricier games. And that's a fun pricepoint so even if you don't like the game hey, you only spent a little bit of cash.</p>
 							</div>
 							
-							<button class="accordion">3. Can I redistribute this template as a ZIP file?</button>
+							<button class="accordion">What inspired you to make the cart?</button>
 							<div class="panel">
-							  <p>Redistributing this template as a downloadable ZIP file on any template collection site is strictly prohibited. You will need to <a href="https://templatemo.com/contact">contact TemplateMo</a> for additional permissions about our templates. Thank you.</p>
+							  <p>Imitation is the highest form of flattery. I saw a <a href = "https://www.instagram.com/boardgamepeddler/">post</a> of someone else who did something similar. They converted a pedal ice cream cart to sell board games out of. That combined with my love of board games gave me the motivation to make Prickly Pair Caravan a reality!</p>
 							</div>
 							
-							<button class="accordion">4. Ut ac erat sit amet neque efficitur faucibus et in lectus?</button>
+							<button class="accordion">How did you get into board games?</button>
 							<div class="panel">
-								<p>Vivamus viverra pretium ultricies. Praesent feugiat, sapien vitae blandit efficitur, sem nulla venenatis nunc, vel maximus ligula sem a sem. Pellentesque ligula ex, facilisis ac libero a, blandit ullamcorper enim.</p>
+								<p>A coworker invited me to their board game night in the winter of 2023. I had only ever played mainstream board games before and had no idea there was anything beyond that. From there the seed was planted and I hope Prickly Pair Caravan brings you some of that joy as well!</p>
 							</div>
+
+							<button class="accordion">How do you get your prices so low?</button>
+							<div class="panel">
+								<p>A mixture of sales, discount codes, and meeting free shipping requirements allows me to sell games at or below $15. You can find similar prices online, maybe even a couple dollars less but shipping adds on 7 dollars minumum to your order.</p>
+							</div>
+
+							<button class="accordion">What are your margins?</button>
+							<div class="panel">
+								<p>I believe the most profit I make off a game is 20% with many games being around 5%-10% after accounting for tax. Combined with how much time I spend looking for games really makes this a labor of love. I'm not quitting my day job anytime soon ha.</p>
+							</div>
+
+							<button class="accordion">How did you build the cart?</button>
+							<div class="panel">
+								<p>I purchased <a href = "https://www.etsy.com/listing/1217794383/candy-cart-trolley-style-plans-with">these</a> design plans for a cotton candy cart and then made modifications of my own. The biggest being wheelbarrow tires instead of bicycle due to the amount of goatheads here.</p>
+							</div>
+
+							<button class="accordion">How did you build the cart?</button>
+							<div class="panel">
+								<p>Currently we are only at Quarter Celtic. I would like to expand into artisan markets, I have something in the works for that! I can't sell my normal inventory but by mid December 2024 I hope to have a couple prototypes ready.</p>
+							</div>
+
 						</div>	
 					</div>
 				</div>
@@ -99,7 +120,26 @@ https://templatemo.com/tm-539-simple-house
             | Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
 		</footer>
 	</div>
+
 	<script src="js/jquery.min.js"></script>
 	<script src="js/parallax.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+			
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+			    var panel = this.nextElementSibling;
+			    if (panel.style.maxHeight) {
+			      panel.style.maxHeight = null;
+			    } else {
+			      panel.style.maxHeight = panel.scrollHeight + "px";
+			    }
+			  });
+			}	
+		});
+	</script>
 </body>
 </html>
