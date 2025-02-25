@@ -1,0 +1,158 @@
+/**
+ * Print stylesheet for designevents.guide
+* @version         1.0
+* @lastmodified    2022.12.17
+*/
+
+@media print {
+    .container {
+      width: 100%; 
+      margin: 0; 
+      float: none;
+    }
+    
+    @font-face {
+      font-family: 'Didot';
+      src: url('fonts/Didot/Didot.eot');
+      src: url('fonts/Didot/Didot.woff2') format('woff2'),
+           url('fonts/Didot/Didot.woff') format('woff'),
+           url('fonts/Didot/Didot.ttf') format('truetype'),
+           url('fonts/Didot/Didot.svg') format('svg'),
+           url('fonts/Didot/Didot.eot?#iefix') format('embedded-opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+      
+    @page {
+      size: A4 landscape;
+    }
+    
+    @page {
+      margin: 0.5cm;
+        background: #fff !important;
+      }
+    
+    body {
+      font: 12pt Helvetica, sans-serif;
+      line-height: 1.1;
+      background: none;
+        color: black;
+      }
+    
+    select, button {
+      display: none;
+    }  
+    
+    header ul li {
+      display: none;
+    }
+    
+    header .year:nth-child(1) {
+      height: 2cm;
+    }
+    
+    header .year:nth-child(2), footer .year:nth-child(1), footer .year:nth-child(2) {
+      height: 1cm;
+    }
+    
+    a, a:visited {
+      text-decoration: none;
+      color: black;
+    }
+    
+    .printer {
+      display: none;
+    }
+    
+    p {
+      margin: 0;
+      line-height: 1.1;
+    }
+    
+    li {
+      list-style: none;
+      width: 100%;
+    }
+    
+    li p:nth-child(1){
+      font-weight: bold;
+    }
+    
+    li div {
+      padding-bottom: .2cm;
+    }
+    
+    .year {
+      column-count: 7;
+      -webkit-column-count: 7;
+      -moz-column-count: 7;
+      column-width: 100%;
+    }
+    
+    .year li {
+      page-break-inside: avoid;           /* Theoretically FF 20+ */
+      break-inside: avoid-column;         /* Chrome, Safari, IE 11 */
+      display:table;                      /* Actually FF 20+ */
+      -webkit-column-break-inside: avoid;
+      -moz-column-break-inside:avoid;
+      -moz-page-break-inside:avoid;
+      overflow: hidden;
+      height: 6cm;
+    }
+    
+    .year li:nth-child(1), li:nth-child(2) {
+      height: 1cm;
+    }
+    
+    .sticky li {
+      display: none;
+    }
+    
+    .month {
+      column-span: all;
+      -webkit-column-span: all;
+      -moz-column-span: all;
+      font-size: 18pt;  
+    }
+    
+    section .month:nth-child(1) {
+      page-break-after:avoid;
+      page-break-before:auto;
+    }
+    
+    h1 {
+      column-span: all;
+      -webkit-column-span: all;
+      -moz-column-span: all;
+      font-size: 36pt;
+    }
+    
+    
+    h3 {
+      font-weight: normal;
+      font-family: 'Didot', sans-serif;
+    }
+    
+    .header ul .year {
+      height: 1cm;
+    }
+    
+    .by-thomasdahm {
+      display: none;
+    }
+    
+    /* hide last month of the previous year, print only*/
+    #y2023Printcss {
+      display: none;
+    }
+    
+    /* FOOTER */
+    .ml-embedded {
+      display: none;
+    }
+    
+    .screen small {
+      display: none;
+    }
+    
+    } /*end @media print*/
