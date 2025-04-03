@@ -79,7 +79,7 @@ function initializeGroups() {
         clip: {
             x: 0,
             y: 0,
-            width: 1700,
+            width: 1600,
             height: 976
         }
     });
