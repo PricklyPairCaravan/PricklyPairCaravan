@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starving Artists Custom Card Creator: Portrait</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ebrima:wght@400;700&display=swap" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/style-starve.css" rel="stylesheet">
+    <script src="https://unpkg.com/konva@8/konva.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="controls">
+            <div class="container">
+                <form class="form-horizontal">
+                    <h4>Custom Portrait Card Creator</h4>
+                    <p class="subheading"><em>Switch to <a href="./landscape.html">landscape mode</a></em></p>
+                    
+                    <div class="form-group">
+                        <label for="sourceImage">Upload Artwork</label>
+                        <input class="input-file" id="sourceImage" name="sourceImage" type="file">
+                        <span class="help-block">(preferred resolution: 976 x 1500)</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="ArtScale">Scale Artwork</label>
+                        <input id="ArtScale" type="range" min="10" max="250" step="5" value="100">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="Artist">Artist Name</label>
+                        <input class="form-control" id="Artist" name="Artist" placeholder="Anonymous artist" type="text">
+                        <span class="help-block">The name of the artist with year in parenthesis.</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="Title">Painting Title</label>
+                        <input class="form-control" id="Title" name="Title" placeholder="Placeholder title (2021)" type="text">
+                        <span class="help-block">Name of the painting.</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="Food">Food Reward</label>
+                        <select class="form-control" id="Food" name="Food">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="Paints">Paint Reward</label>
+                        <select class="form-control" id="Paints" name="Paints">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="Points">Stars (Points)</label>
+                        <select class="form-control" id="Points" name="Points">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input checked="checked" id="SnapGrid" type="checkbox">
+                        <label for="SnapGrid">Snap to Grid</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <p>Place a color square:</p>
+                        <div id="color-palette">
+                            <img id="btnRed" src="/images/starve/red.png" data-color="red" class="color-btn">
+                            <img id="btnOrange" src="/images/starve/orange.png" data-color="orange" class="color-btn">
+                            <img id="btnYellow" src="/images/starve/yellow.png" data-color="yellow" class="color-btn">
+                            <img id="btnGreen" src="/images/starve/green.png" data-color="green" class="color-btn">
+                            <img id="btnBlue" src="/images/starve/blue.png" data-color="blue" class="color-btn">
+                            <img id="btnViolet" src="/images/starve/violet.png" data-color="violet" class="color-btn">
+                            <img id="btnBlack" src="/images/starve/black.png" data-color="black" class="color-btn">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <p><strong>Wild space: </strong><img id="btnWild" src="/images/starve/wild.png" data-color="wild" class="color-btn"></p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="saturation">Art <strong>saturation</strong>: <span id="saturation-reset">↩️</span></label>
+                        <input id="saturation" type="range" min="-2" max="10" step="0.1" value="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <button id="btnClear" type="button">Clear all Squares</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="canvas-container">
+            <div class="canvas-instructions">
+                
+            <h4>Your Custom Canvas</h4><p><strong>Add squares: </strong> Click on the art.</p>
+                <p><strong>Delete squares: </strong> Right click on square.</p>
+				<div class="form-group download"><button id="btnDownload" type="button">Download!</button>
+                <p><strong>Move squares: </strong> Drag and drop them.</p>
+                <p>By default, Snap To Grid is enabled. You can disable in the menu on the left.</p>
+            </div>
+            </div>
+            
+            
+            
+            <div id="stage-parent">
+                <div id="portraitCanvas"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/js/colors.js"></script>
+    <script src="/js/card-creator.js"></script>
+</body>
+</html>
