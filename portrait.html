@@ -1,0 +1,426 @@
+<html>
+<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=msCHzjBE" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://www.fairway3games.com/custom-canvas-creator/","20230129225836","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1675033116");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=p7PEIJWi" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+<meta charset="UTF-8">
+<title>Starving Artists Custom Card Creator: Portrait</title>
+<link href="https://web.archive.org/web/20230129225836/https://fonts.googleapis.com/" rel="dns-prefetch"/>
+<link href="//web.archive.org/web/20230129225836cs_/https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"/>
+<link href="/web/20230129225836cs_/https://www.fairway3games.com/custom-canvas-creator/form-style.css" rel="stylesheet"/>
+<script src="https://web.archive.org/web/20230129225836js_/https://unpkg.com/konva@8/konva.min.js"></script><script src="/web/20230129225836js_/https://www.fairway3games.com/custom-canvas-creator/colors.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<div id="controls" style="float: left; width: 350px; margin-right: 2em;">
+<div class="container">
+<form class="form-horizontal">
+<h4>Custom Portrait Card Creator</h4>
+<p style="font-size:.75em; margin-top: -1em;"><em>Switch to <a href="./landscape.html">landscape mode</a></em></p>
+
+<div class="col-md-4"><input class="input-file" id="sourceImage" name="sourceImage" type="file"/></div>
+(preferred resolution: 976 x 1500)<br/><span style="line-height: 1.2em; vertical-align:middle">Scale:<input id="ArtScale" type="range" min="10" max="250" step="5" value="100" style="vertical-align: middle; width: 50%"/></span></div>
+
+<div class="form-group"><label class="col-md-4 control-label" for="Artist">Artist Name</label>
+<div class="col-md-4"><input class="form-control input-md" id="Artist" name="Artist" placeholder="Anonymous artist" type="text"/> <span class="help-block">The name of the artist with year in parenthesis.</span></div>
+</div>
+
+<div class="form-group"><label class="col-md-4 control-label" for="Title">Painting Title</label>
+<div class="col-md-5"><input class="form-control input-md" id="Title" name="Title" placeholder="Placeholder title (2021)" type="text"/> <span class="help-block">Name of the painting.</span></div>
+</div>
+
+<div class="form-group"><label class="col-md-4 control-label" for="Food">Food Reward</label>
+<div class="col-md-2"><select class="form-control" id="Food" name="Food"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option> </select></div>
+</div>
+
+<div class="form-group"><label class="col-md-4 control-label" for="Paints">Paint Reward</label>
+<div class="col-md-2"><select class="form-control" id="Paints" name="Paints"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option> </select></div>
+</div>
+
+<div class="form-group"><label class="col-md-4 control-label" for="Stars">Stars (Points)</label>
+<div class="col-md-2"><select class="form-control" id="Points" name="Points"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option> </select></div>
+</div>
+<div class="form-group">
+<p><input checked="checked" id="SnapGrid" type="checkbox"/><label for="SnapGrid">Snap to Grid</label></p>
+<p>Place a color square:<br/>
+<img id="btnRed" src="/web/20230129225836im_/https://www.fairway3games.com/custom-canvas-creator/red.png" style="width: 25px;"/><img id="btnOrange" src="/web/20230129225836im_/https://www.fairway3games.com/custom-canvas-creator/orange.png" style="width: 25px;"/><img id="btnYellow" src="/web/20230129225836im_/https://www.fairway3games.com/custom-canvas-creator/yellow.png" style="width: 25px;"/><img id="btnGreen" src="/web/20230129225836im_/https://www.fairway3games.com/custom-canvas-creator/green.png" style="width: 25px;"/><img id="btnBlue" src="/web/20230129225836im_/https://www.fairway3games.com/custom-canvas-creator/blue.png" style="width: 25px;"/><img id="btnViolet" src="/web/20230129225836im_/https://www.fairway3games.com/custom-canvas-creator/violet.png" style="width: 25px;"/><img id="btnBlack" src="/web/20230129225836im_/https://www.fairway3games.com/custom-canvas-creator/black.png" style="width: 25px;"/></p>
+<div class="form-group"><p><strong>Wild space: </strong><img id="btnWild" src="/web/20230129225836im_/https://www.fairway3games.com/custom-canvas-creator/wild.png" style="width: 25px; vertical-align: middle;"/></p></div>
+</div>
+<div class="form-group">
+<div id="controls">
+<label for="saturation">Art <strong>saturation</strong>: <span id="saturation-reset">↩️</span></label>
+<input id="saturation" type="range" min="-2" max="10" step="0.1" value="0"/>
+</div>
+</div>
+<div class="form-group"><label class="col-md-4 control-label" for="btnClear">Clear all Squares</label>
+<div class="col-md-4"><input id="btnClear" type="button" value="Clear"/></div>
+</div>
+</form>
+</div>
+</div>
+<div class="canvas-container" style="float: left;">
+<h4>Your Custom Canvas</h4>
+<p><strong>Add squares: </strong> click on the art.<br/>
+<strong>Delete squares: </strong> Right click on square.<br/>
+<strong>Move squares: </strong> Drag and drop them.</p>
+<p>By default, Snap To Grid is enabled. You can disable in the menu on the left.</p>
+<form>
+<div class="form-group"><label class="col-md-4 control-label" for="btnDownload">Get Your File</label>
+<div class="col-md-4"><input id="btnDownload" type="button" value="Download!"/></div>
+</div>
+</form>
+<div id="stage-parent">
+<div id="portraitCanvas" style=""></div>
+</div>
+</div>
+</div>
+<script>
+
+const sourceImage = document.querySelector("#sourceImage");
+
+
+
+const scaleCanvas = .5; // avoid full resolution canvas.
+var gridSize = 130; // when snap to grid
+var sceneWidth = 1125;
+var sceneHeight = 1725;
+// first we need to create a stage
+var stage = new Konva.Stage({
+    container: 'portraitCanvas', // id of container <div>
+    width: sceneWidth,
+    height: sceneHeight
+});
+var backgroundLayer = new Konva.Layer();
+var frameLayer = new Konva.Layer();
+var artLayer = new Konva.Layer();
+var textLayer = new Konva.Layer();
+var daubLayer = new Konva.Layer();
+var navigationLayer = new Konva.Layer();
+var artLoaded = false;
+var snapToGrid = true;
+var daubGroup = new Konva.Group({
+    x: 80,
+    y: 80,
+    width: 970,
+    height: 1400
+});
+var vitalGroup = new Konva.Group({
+    x: 80,
+    y: 1425,
+    width: 970,
+    height: 160
+});
+textLayer.add(daubGroup);
+textLayer.add(vitalGroup);
+stage.add(backgroundLayer);
+stage.add(artLayer);
+stage.add(frameLayer);
+stage.add(textLayer);
+stage.add(navigationLayer);
+
+
+// FRAME IMAGE
+var frameImageObj = new Image();
+frameImageObj.onload = function() {
+    var frameImg = new Konva.Image({
+        x: 0,
+        y: 0,
+        image: frameImageObj
+    });
+    // add the shape to the layer
+    frameLayer.add(frameImg);
+            
+                        
+            frameImg.cache();
+            frameImg.drawHitFromCache();
+            
+            frameLayer.draw();
+};
+frameImageObj.src = 'portrait-bar-only.png';
+
+//BACKGROUND IMAGE
+var bgImageObj = new Image();
+bgImageObj.onload = function() {
+    var bgImg = new Konva.Image({
+        x: 0,
+        y: 0,
+        image: bgImageObj
+    });
+    // add the shape to the layer
+    backgroundLayer.add(bgImg);
+    backgroundLayer.draw();
+};
+bgImageObj.src = 'background.png';
+
+// Art Frame (for clipping purposes)
+        var artFrame = new Konva.Group({
+           x: 76,
+           y: 76,
+           stroke: 'blue',
+           strokeWidth: 5,
+           clip: {
+               
+               x: 0,
+               y: 0,
+               width: 976,
+               height: 1500
+               
+           }
+            
+        });
+        artLayer.add(artFrame);
+
+
+
+
+var artImageObject = new Image();
+artImageObject.onload = function() {
+    var artImg = new Konva.Image({
+        image: artImageObject,
+        draggable: true,
+        name: 'ArtImage'
+    });
+    
+    
+    // enable saturation tools
+    artImg.cache();
+    artImg.filters([Konva.Filters.HSL]);
+            
+            
+    var sliders = ['saturation'];
+    sliders.forEach(function (attr) {
+    var slider = document.getElementById(attr);
+    function update() {
+                
+        artImg[attr](parseFloat(slider.value));
+        redraw();
+    }
+    slider.onchange = update;
+    slider.oninput = update;
+              
+    function saturationReset() {
+        slider.value = 0;
+        artImg[attr](parseFloat(slider.value));
+        redraw();
+    }
+    document.getElementById(attr+'-reset').onclick = saturationReset;
+    
+        
+    }
+    );
+    
+    
+    
+    
+    artLoaded = true;
+    // add the shape to the layer
+            artFrame.add(artImg);
+            redraw();
+};
+
+
+
+
+
+
+
+
+
+
+// Paint Counts
+var countGroup = new Konva.Group({
+    x: 160,
+    y: 1600
+});
+var daubs = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Violet', 'Black'];
+var daubCPos = [0, 125, 225, 340, 450, 565, 680];
+for (var i = 0; i < daubs.length; i++) {
+    var textbox = new Konva.Text({
+        x: daubCPos[i],
+        y: 0,
+        width: 120,
+        height: 70,
+        name: 'Txt' + daubs[i],
+        fill: 'white',
+        stroke: 'black',
+        strokeWidth: 1,
+        fontSize: 75,
+        text: '0',
+        align: 'center',
+        fontFamily: 'Ebrima Bold'
+    });
+    countGroup.add(textbox);
+
+    document.getElementById('btn' + daubs[i]).addEventListener(
+        'click',
+        function() {
+            if (!artLoaded) return;
+
+            var tmpColor = this.src.substring(this.src.lastIndexOf('/') + 1).split('.')[0];
+
+            addDaub(tmpColor, 100, 100);
+
+        },
+        false
+    );
+
+}
+textLayer.add(countGroup);
+
+
+// TITLE
+var titleText = new Konva.Text({
+    x: 0,
+    y: 0,
+    width: 590,
+    height: 70,
+    name: 'TxtArtist',
+    fill: 'white',
+    fontFamily: 'Ebrima',
+    fontStyle: 'bold',
+    fontSize: 75,
+    text: 'Unidentified artwork (2021)',
+    align: 'left'
+});
+vitalGroup.add(titleText);
+
+// ARTIST
+var artistText = new Konva.Text({
+    x: 0,
+    y: 75,
+    width: 590,
+    height: 70,
+    name: 'TxtTitle',
+    fill: 'white',
+    fontFamily: 'Ebrima',
+    fontStyle: 'normal',
+    fontSize: 40,
+    text: 'Unknown artist',
+    align: 'left'
+});
+vitalGroup.add(artistText);
+
+// FOOD REWARD
+var foodText = new Konva.Text({
+    x: 610,
+    y: 50,
+    width: 90,
+    height: 90,
+    name: 'TxtFood',
+    fill: '#4b4b4b',
+    fontSize: 130,
+    text: '1',
+    align: 'right'
+});
+vitalGroup.add(foodText);
+
+// PAINT REWARD
+var paintText = new Konva.Text({
+    x: 775,
+    y: 50,
+    width: 150,
+    height: 90,
+    name: 'TxtPaint',
+    fill: '#4b4b4b',
+    fontSize: 130,
+    text: '1',
+    align: 'right'
+});
+vitalGroup.add(paintText);
+
+// STARS / POINTS REWARD
+var starsText = new Konva.Text({
+    x: 915,
+    y: 90,
+    width: 110,
+    height: 120,
+    name: 'TxtStars',
+    fill: '#4b4b4b',
+    fontSize: 110,
+    text: '1',
+    align: 'right'
+});
+textLayer.add(starsText);
+
+var currentPixel = new Konva.Rect({
+    width: 75, height: 75, 
+    stroke: 'Black', 
+    strokeWidth: 1, 
+    visible: false, 
+    shadowColor: '#ffffff', 
+    shadowOffset: {x:0, y:0},
+    shadowEnabled: true,
+    shadowOpacity: .8,
+    shadowBlur: 5
+    
+});
+
+            navigationLayer.add(currentPixel);
+
+            stage.on('mousemove touchmove', function(e) {
+
+
+                if (!artLoaded) return;
+            
+            
+            
+                var pos = artLayer.getRelativePointerPosition();
+                var ctx = artLayer.getCanvas().getContext();
+                var pixelData = ctx.getImageData((pos.x) * stage.getAbsoluteScale().x, (pos.y) * stage.getAbsoluteScale().y, 1, 1).data;
+                var hex = rgbToHex(pixelData[0], pixelData[1], pixelData[2]);
+            
+                currentPixel.fill(hex);
+                currentPixel.x(pos.x+40);
+                currentPixel.y(pos.y-40);
+                currentPixel.show();
+            
+            });
+
+
+function fitStageIntoParentContainer() {
+    var container = document.querySelector('#stage-parent');
+    // now we need to fit stage into parent container
+    var containerWidth = container.offsetWidth;
+    // but we also make the full scene visible
+    // so we need to scale all objects on canvas
+    var scale = containerWidth / sceneWidth;
+    stage.width(sceneWidth * scale);
+    stage.height(sceneHeight * scale);
+    stage.scale({
+        x: scale,
+        y: scale
+    });
+}
+fitStageIntoParentContainer();
+
+
+         	
+      </script><script src="/web/20230129225836js_/https://www.fairway3games.com/custom-canvas-creator/card-creator.js"></script></body>
+</html><!--
+     FILE ARCHIVED ON 22:58:36 Jan 29, 2023 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:23:23 Apr 03, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 1.132
+  exclusion.robots: 0.032
+  exclusion.robots.policy: 0.019
+  esindex: 0.012
+  cdx.remote: 7.249
+  LoadShardBlock: 212.091 (3)
+  PetaboxLoader3.datanode: 174.97 (4)
+  PetaboxLoader3.resolve: 2187.032 (2)
+  load_resource: 2176.326
+-->
