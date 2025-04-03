@@ -208,7 +208,7 @@ function initializeTextElements() {
 
     // Title text
     const titleText = new Konva.Text({
-        x: 0,
+        x: 50,
         y: 900,
         width: 590,
         height: 70,
@@ -225,7 +225,7 @@ function initializeTextElements() {
 
     // Artist text
     const artistText = new Konva.Text({
-        x: 0,
+        x: 50,
         y: 1000,
         width: 590,
         height: 70,
@@ -242,7 +242,7 @@ function initializeTextElements() {
 
     // Food reward text
     const foodText = new Konva.Text({
-        x: 1300,
+        x: 1325,
         y: 900,
         width: 90,
         height: 90,
@@ -257,7 +257,7 @@ function initializeTextElements() {
 
     // Paint reward text
     const paintText = new Konva.Text({
-        x: 1400,
+        x: 1425,
         y: 900,
         width: 150,
         height: 90,
