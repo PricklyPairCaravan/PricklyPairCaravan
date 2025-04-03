@@ -522,7 +522,7 @@ function addDaub(color, x, y) {
         redraw();
     };
     
-    imageObj.src = color.toLowerCase() + '.png';
+    imageObj.src = '../images/starve/' + color.toLowerCase() + '.png';
 }
 
 /**
