@@ -554,7 +554,7 @@ function addWild() {
         redraw();
     };
     
-    imageObj.src = 'wild.png';
+    imageObj.src = '../images/starve/wild.png';
 }
 
 /**
@@ -688,7 +688,7 @@ function loadFrameImageDirectly() {
     frameImageObj.onerror = function() {
         console.error("Failed to load frame image");
     };
-    frameImageObj.src = 'portrait-bar-only.png';
+    frameImageObj.src = '../images/starve/portrait-bar-only.png';
 }
 
 /**
