@@ -89,7 +89,7 @@ function initializeGroups() {
     daubGroup = new Konva.Group({
         x: 80,
         y: 80,
-        width: 1400,
+        width: 1500,
         height: 970
     });
     daubLayer.add(daubGroup);
