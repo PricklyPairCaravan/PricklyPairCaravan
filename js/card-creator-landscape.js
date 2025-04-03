@@ -161,7 +161,7 @@ function loadImages() {
             frameImg.drawHitFromCache();
             resolve();
         };
-        frameImageObj.src = '../images/starve/portrait-bar-only.png';
+        frameImageObj.src = '../images/starve/landscape-bar-only.png';
     });
     loadPromises.push(framePromise);
 
@@ -688,7 +688,7 @@ function loadFrameImageDirectly() {
     frameImageObj.onerror = function() {
         console.error("Failed to load frame image");
     };
-    frameImageObj.src = '../images/starve/portrait-bar-only.png';
+    frameImageObj.src = '../images/starve/landscape-bar-only.png';
 }
 
 /**
