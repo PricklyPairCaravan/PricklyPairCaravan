@@ -201,14 +201,15 @@ function initializeTextElements() {
     fontStyle: 'bold'  // Add this line to make it bold
         });
         countGroup.add(textbox);
+        textLayer.add(countGroup); //added this in to see if this will fix missing text, line 207 did not
     });
     textLayer.add(countGroup);
-    vitalGroup.add(countGroup); //added this in, since value is not showing and seems to be a discrepancy
+    vitalGroup.add(countGroup); //added this in, since value is not showing and seems to be a discrepancy (did not work)
 
     // Title text
     const titleText = new Konva.Text({
         x: 0,
-        y: 0,
+        y: 900,
         width: 590,
         height: 70,
         name: 'TxtTitle',
@@ -225,7 +226,7 @@ function initializeTextElements() {
     // Artist text
     const artistText = new Konva.Text({
         x: 0,
-        y: 75,
+        y: 1000,
         width: 590,
         height: 70,
         name: 'TxtArtist',
@@ -241,8 +242,8 @@ function initializeTextElements() {
 
     // Food reward text
     const foodText = new Konva.Text({
-        x: 610,
-        y: 50,
+        x: 1300,
+        y: 900,
         width: 90,
         height: 90,
         name: 'TxtFood',
@@ -256,8 +257,8 @@ function initializeTextElements() {
 
     // Paint reward text
     const paintText = new Konva.Text({
-        x: 775,
-        y: 50,
+        x: 1400,
+        y: 900,
         width: 150,
         height: 90,
         name: 'TxtPaint',
