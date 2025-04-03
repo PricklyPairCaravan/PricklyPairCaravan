@@ -161,7 +161,7 @@ function loadImages() {
             frameImg.drawHitFromCache();
             resolve();
         };
-        frameImageObj.src = 'portrait-bar-only.png';
+        frameImageObj.src = '../images/starve/portrait-bar-only.png';
     });
     loadPromises.push(framePromise);
 
