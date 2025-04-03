@@ -266,7 +266,7 @@ function initializeTextElements() {
 
     // Stars/points reward text
     const starsText = new Konva.Text({
-        x: 915,
+        x: 1300,
         y: 90,
         width: 110,
         height: 120,
