@@ -141,7 +141,7 @@ function loadImages() {
             bgImg.moveToBottom();
             resolve();
         };
-        bgImageObj.src = 'background.png';
+        bgImageObj.src = '../Images/starve/background.png';
     });
     loadPromises.push(bgPromise);
 
