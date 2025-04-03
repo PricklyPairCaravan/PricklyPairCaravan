@@ -203,6 +203,7 @@ function initializeTextElements() {
         countGroup.add(textbox);
     });
     textLayer.add(countGroup);
+    vitalGroup.add(countGroup); //added this in, since value is not showing and seems to be a discrepancy
 
     // Title text
     const titleText = new Konva.Text({
@@ -219,6 +220,7 @@ function initializeTextElements() {
         align: 'left'
     });
     vitalGroup.add(titleText);
+    textLayer.add(titleText);   //added this in, since for some reason star value has this but no vital group line 280. And since vital group seems to not be working.
 
     // Artist text
     const artistText = new Konva.Text({
@@ -235,6 +237,7 @@ function initializeTextElements() {
         align: 'left'
     });
     vitalGroup.add(artistText);
+    textLayer.add(artistText);   //added this in, since for some reason star value has this but no vital group line 280. And since vital group seems to not be working.
 
     // Food reward text
     const foodText = new Konva.Text({
@@ -249,6 +252,7 @@ function initializeTextElements() {
         align: 'right'
     });
     vitalGroup.add(foodText);
+    textLayer.add(foodText);   //added this in, since for some reason star value has this but no vital group line 280. And since vital group seems to not be working.
 
     // Paint reward text
     const paintText = new Konva.Text({
@@ -263,6 +267,7 @@ function initializeTextElements() {
         align: 'right'
     });
     vitalGroup.add(paintText);
+    textLayer.add(paintText);  //added this in, since for some reason star value has this but no vital group line 280. And since vital group seems to not be working.
 
     // Stars/points reward text
     const starsText = new Konva.Text({
