@@ -79,8 +79,8 @@ function initializeGroups() {
         clip: {
             x: 0,
             y: 0,
-            width: 976,
-            height: 1500
+            width: 1500,
+            height: 976
         }
     });
     artLayer.add(artFrame);
